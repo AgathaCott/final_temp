@@ -128,12 +128,21 @@
   line-height: 40px;
   letter-spacing: -0.03em;
   text-align: justify;
+
+/* И ТУТ  */
+  display: flex;
+  justify-content: space-between;
+
 }
 
 .inactive-delete {
   width: 18px;
   height: 18px;
-  margin-right: 11px;
+  
+/* ИЗМЕНЕНИЯ ТУТ  */
+
+  margin-top:10px;
+  margin-right: 2px;
   vertical-align: middle;
 }
 
