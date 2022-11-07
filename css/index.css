@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&display=swap');
+
+.main-title {
+  margin-top: 44px;
+  margin-bottom: 86px;
+  font-family: IBM Plex Mono;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
+  letter-spacing: -0.08em;
+  color: #4520AB;
+}
+
+.input-box {
+  margin: auto;
+  margin-top: 86px;
+  width: 500px;
+  height: 56px;
+  left: 390px;
+  top: 182px;
+  border: 2px solid #111111;
+  border-radius: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#input-word {
+  margin-left: 12px;
+  width: 209px;
+  height: 24.64px;
+  letter-spacing: -0.05em;
+  font-family: 'IBM Plex Mono';
+  font-weight: 400;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  color: #111111;
+  opacity: 0.4;
+}
+
+#button-add {
+  margin-right: 12px;
+  width: 113px;
+  height: 38px;
+  border-radius: 8px;
+  background: #111111;
+  border: none;
+  font-family: 'IBM Plex Mono';
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.dictionary {
+  width: 500px;
+  margin: auto;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.columns {
+  width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+}
+
+.left-column {
+  font-family: 'IBM Plex Mono';
+  width: 250px;
+  height: 100%;
+  background-color: #F0F0F0;
+  border-right: 1px solid #111111;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.left-number {
+  width: 28px;
+  text-align: left;
+  margin-left: 12px;
+  font-family: 'IBM Plex Mono';
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 40px;
+  letter-spacing: -0.05em;
+  color: #111111;
+}
+
+.left-word {
+  margin: 0;
+  font-family: 'IBM Plex Mono';
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 40px;
+  letter-spacing: -0.03em;
+  text-align: left;
+  color: #111111;
+}
+
+.right-column {
+  font-family: 'IBM Plex Mono';
+  width: 250px;
+  height: 100%;
+  background-color: #D8D8D8;
+  border-left: 1px solid #111111;
+  border-bottom-right-radius: 8px;
+  border-top-right-radius: 8px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.right-word {
+  width: 100%;
+  margin-left: 28px;
+  margin-right: 10px;
+  font-family: 'IBM Plex Mono';
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 40px;
+  letter-spacing: -0.03em;
+  text-align: justify;
+}
+
+.inactive-delete {
+  width: 18px;
+  height: 18px;
+  margin-right: 11px;
+  vertical-align: middle;
+}
+
+.columns:first-child .left-column {
+  border-radius: 8px 0 0 0;
+}
+
+.columns:last-child .left-column {
+  border-bottom: 1px solid transparent;
+  border-bottom-left-radius: 8px;
+}
+
+.columns:first-child .right-column {
+  border-radius: 0 8px 0 0;
+}
+
+.columns:last-child .right-column {
+  border-bottom: 1px solid transparent;
+  border-bottom-right-radius: 8px;
+}
+
+#delete-all {
+  margin: auto;
+  padding: 6px 10px 8px;
+  width: 176px;
+  height: 35px;
+  border: none;
+  border-radius: 8px;
+  background: #ADADAD;
+  letter-spacing: -0.05em;
+  text-align: center;
+  font-family: 'IBM Plex Mono';
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  text-align: center;
+  color: #0F0F0F;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.clear-all-icon {
+  height: 24px;
+  width: 24px;
+}
+
+#button-add:hover {
+  transform: scale(1.1);
+}
+
+#delete-all:hover {
+  transform: scale(1.1);
+}
+
+.delete-icon {
+  width: 18px;
+  height: 18px;
+  margin-right: 11px;
+  vertical-align: middle;
+}
+
+.delete-icon:hover {
+  transform: scale(1.1);
+}
+
+.tooltip {
+  padding: 8px 16px 10px;
+  position: absolute;
+  margin-right: 75px;
+  margin-left: 20px;
+  margin-bottom: 25px;
+  background-color: #FFFFFF;
+  color: #111111;
+  box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+
+  .main-title {
+    margin-top: 20px;
+    margin-bottom: 70px;
+    font-size: 36px;
+    line-height: 46px;
+    letter-spacing: -0.07em;
+  }
+
+  .input-box {
+    width: 328px;
+    height: 56px;
+    left: 16px;
+    top: 143px;
+  }
+
+  #input-word {
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: -0.05em;
+  }
+
+  .dictionary {
+    margin-top: 50px;
+    margin-bottom: 40px;
+    width: 328px;
+  }
+
+  .delete-icon {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+@media (max-width: 400px) {
+  .main-title {
+    margin: 0 auto;
+    width: 308px;
+    height: 47px;
+    margin-top: 20px;
+    margin-left: 26px;
+    margin-right: 26px;
+    margin-bottom: 76px;
+    font-size: 36px;
+  }
+  .input-box {
+      width: 328px;
+      height: 56px;
+      margin-bottom: 50px;
+  }
+  .input-word {
+      width: 209px;
+      font-size: 15px;
+  }
+  .dictionary {
+      width: 328px;
+      min-height: 50px;
+  }
+  .left-column, .right-column {
+      width: 164px;
+      min-height: 50px;
+  }
+  .delete-all {
+      margin-top: 40px;
+  }
+}
